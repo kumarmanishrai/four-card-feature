@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: Poppins;
+    background-color: hsl(0, 0%, 98%);
+    align-content: center;
+}
+
+/* Header Section */
+.heading{
+    max-width: 114rem;
+    background-color: hsl(0, 0%, 98%);
+    /* background-color: aqua; */
+    margin: 0rem auto;
+    padding: 2.4rem 1.2rem 1.2rem 1.2rem;
+    align-content: center;
+    text-align: center;
+
+}
+.heading-light{
+    font-size: 2.4rem;
+    font-weight: 300;
+}
+
+.heading-strong{
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 2.2rem;
+}
+
+.heading-veryLight{
+    margin: 1.6rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-break: auto;
+}
+
+/* Main Section */
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 98%);
+    /* background-color: red; */
+    max-width: 114rem;
+    min-height: 0rem;
+    margin: auto;
+    padding: 1.8rem 1.2rem 1.8rem 1.2rem;
+    
+}
+
+.box{
+    position: relative;
+    min-width: 18rem;
+    max-width: 28rem;
+    min-height: 24rem;
+    margin: 1.5rem 1.5rem 1.5rem 1.5rem;
+    background-color: hsl(40, 30%, 98%);
+    /* background-color: blue; */
+    box-shadow: 1rem 1rem 0.8rem rgb(172, 171, 171);
+    border-radius: 0.5rem;
+    border-top: 0.4rem solid;
+}
+
+#box1{
+    border-color: hsl(180, 62%, 55%);
+}
+
+#box2{
+    border-color: hsl(0, 78%, 62%);
+}
+
+#box3{
+    border-color: hsl(34, 97%, 64%);
+}
+
+#box4{
+    border-color: hsl(212, 86%, 64%);
+}
+
+.strong{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 1.4rem 0rem 1.1rem 1.4rem;
+}
+
+.light{
+    font-size: 1.2rem;
+    font-weight:400;
+    margin: 1.1rem 0rem 0rem 1.4rem;
+
+
+}
+
+.img{
+    position: absolute;
+    float: right;
+    right: 0;
+    bottom: 0;
+    margin: 14rem 1.8rem 1rem 0rem;
+}
+
+.center-row{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* Footer Section */
+
+.footer{
+    max-width: 114rem;
+    background-color: hsl(40, 30%, 98%);
+    /* background-color: blue; */
+    margin: 0rem auto;
+    padding: 1.2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.link{
+    text-decoration: none;
+    color: black;
+    font-size: 1.6rem;
+    font-weight: 400;
+
+}
+
+
+/* Media query */
+
+@media screen and (max-width:1026px){
+    .box{
+        grid-area: "myArea";
+    }
+    .main{
+        display: grid;
+        grid-gap: 1.5rem;
+        grid-template-areas: 'myArea myArea'
+        'myArea myArea';
+    }  
+    
+    #box4{
+        bottom: 15rem;
+    }   
+    
+}
+
+@media screen and (max-width:480px){
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    #box4{
+        bottom: 0rem;
+    }
+    
+}

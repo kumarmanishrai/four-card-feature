@@ -1,3 +1,3 @@
 # four-card-feature
-this is a four card static page
+this is a four card static page.
 This project has helped me enhancing my CSS skills on topics like flex, position, media query, etc....
